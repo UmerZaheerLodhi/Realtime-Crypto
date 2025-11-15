@@ -15,7 +15,7 @@ APPLY_RSI_FILTER = True
 
 # Initialize exchange
 try:
-    ex = ccxt.binance()
+    ex = ccxt.kucoin()
 except Exception as e:
     st.error(f"Error initializing exchange: {e}")
     st.stop()
